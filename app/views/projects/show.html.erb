@@ -20,5 +20,11 @@
   <%= @project.tracking_id %>
 </p>
 
+<p>
+<%= image_tag @project.photo.url %>
+<%= image_tag @project.photo.url(:medium) %>
+<%= image_tag @project.photo.url(:thumb) %>
+</p>
+
 <%= link_to 'Edit', edit_project_path(@project) %> 
 <%= link_to 'Back', projects_path %>
