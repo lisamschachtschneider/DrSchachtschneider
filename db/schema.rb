@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141218120415) do
+ActiveRecord::Schema.define(version: 20141218121300) do
 
   create_table "posts", force: true do |t|
     t.string   "title"
@@ -35,5 +35,13 @@ ActiveRecord::Schema.define(version: 20141218120415) do
   end
 
   add_index "projects", ["tracking_id"], name: "index_projects_on_tracking_id", unique: true
+
+  create_table "publications", force: true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.string   "link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
