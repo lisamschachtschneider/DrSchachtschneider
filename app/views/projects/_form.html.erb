@@ -16,21 +16,9 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
+    <%= f.label :text %><br>
+    <%= f.text_field :text %>
   </div>
-  <div class="field">
-    <%= f.label :published %><br>
-    <%= f.check_box :published %>
-  </div>
-  <div class="field">
-    <%= f.label :tracking_id %><br>
-    <%= f.number_field :tracking_id %>
-  </div>
-<p>
-<div>
-  <%= f.file_field :photo %>
-</div>
 </p>
   <div class="actions">
     <%= f.submit %>
