@@ -2,12 +2,8 @@
 
 one:
   title: MyString
-  body: MyText
-  published: false
-  tracking_id: 1
+  text: MyText
 
 two:
   title: MyString
-  body: MyText
-  published: false
-  tracking_id: 1
+  text: MyText
